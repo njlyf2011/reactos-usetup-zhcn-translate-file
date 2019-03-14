@@ -11,13 +11,7 @@ static MUI_ENTRY zhCNSetupInitPageEntries[] =
     {
         0,
         20,
-        "Please wait while the ReactOS Setup initializes itself",
-        TEXT_STYLE_NORMAL | TEXT_ALIGN_CENTER
-    },
-    {
-        0,
-        21,
-        "and discovers your devices...",
+        "请等待安装程序初始化并加载硬件...",
         TEXT_STYLE_NORMAL | TEXT_ALIGN_CENTER
     },
     {
@@ -109,14 +103,14 @@ static MUI_ENTRY zhCNWelcomePageEntries[] =
     {
         8,
         15,
-        "\x07  Press ENTER to install or upgrade ReactOS.",
+        "\x07  请按 ENTER 安装或升级 ReactOS。",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         17,
      // "\x07  Press R to repair a ReactOS installation using the Recovery Console.",
-        "\x07  Press R to repair a ReactOS installation.",
+        "\x07  请按 R 修复当前 ReactOS 安装。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -134,7 +128,7 @@ static MUI_ENTRY zhCNWelcomePageEntries[] =
     {
         6,
         23,
-        "For more information on ReactOS, please visit:",
+        "想要了解更多信息，请访问:",
         TEXT_STYLE_NORMAL
     },
     {
@@ -174,49 +168,37 @@ static MUI_ENTRY zhCNIntroPageEntries[] =
     {
         6,
         11,
-        "ReactOS is in Alpha stage, meaning it is not feature-complete",
+        "ReactOS 正处于 Alpha 状态，也就意味着它功能不完善且正在进行重度开发。所以推荐您",
         TEXT_STYLE_NORMAL
     },
     {
         6,
         12,
-        "and is under heavy development. It is recommended to use it only for",
+        "仅将 ReactOS 用作评估或测试而不是当作日常使用的操作系统。"
         TEXT_STYLE_NORMAL
     },
     {
         6,
-        13,
-        "evaluation and testing purposes and not as your daily-usage OS.",
-        TEXT_STYLE_NORMAL
-    },
-    {
-        6,
-        15,
-        "Backup your data or test on a secondary computer if you attempt",
-        TEXT_STYLE_NORMAL
-    },
-    {
-        6,
-        16,
-        "to run ReactOS on real hardware.",
+        14,
+        "如果您想在真实硬件上运行 ReactOS ，请注意备份您的数据。",
         TEXT_STYLE_NORMAL
     },
     {
         8,
-        19,
-        "\x07  Press ENTER to continue ReactOS Setup.",
+        17,
+        "\x07  请按 ENTER 继续安装程序。",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         21,
-        "\x07  Press F3 to quit without installing ReactOS.",
+        "\x07  请按 F3 取消安装 ReactOS。",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "ENTER = Continue   F3 = Quit",
+        "ENTER = 继续   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -595,13 +577,13 @@ static MUI_ENTRY zhCNComputerPageEntries[] =
     {
         8,
         10,
-        "\x07  Press the UP or DOWN key to select the desired computer type.",
+        "\x07  请按向上或向下键选择所需的计算机类型。",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   Then press ENTER.",
+        "   然后按 ENTER 键",
         TEXT_STYLE_NORMAL
     },
     {
@@ -641,25 +623,25 @@ static MUI_ENTRY zhCNFlushPageEntries[] =
     {
         10,
         6,
-        "The system is now making sure all data is stored on your disk.",
+        "系统正在确保所有数据都以复制到磁盘上。",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         8,
-        "This may take a minute.",
+        "这可能需要一段时间。",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         9,
-        "When finished, your computer will reboot automatically.",
+        "计算机将会在操作完成时自动重启。",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "Flushing cache",
+        "正在刷新缓存",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -699,7 +681,7 @@ static MUI_ENTRY zhCNQuitPageEntries[] =
     {
         10,
         11,
-        "Press ENTER to reboot your computer.",
+        "请按 ENTER 重新启动您的计算机。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -796,7 +778,7 @@ static MUI_ENTRY zhCNSuccessPageEntries[] =
     {
         10,
         11,
-        "Press ENTER to reboot your computer.",
+        "请按 ENTER 重新启动您的计算机。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -1324,7 +1306,7 @@ static MUI_ENTRY zhCNPrepareCopyEntries[] =
     {
         0,
         0,
-        "Building the file copy list...",
+        "正在创建文件复制列表...",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1347,7 +1329,7 @@ static MUI_ENTRY zhCNSelectFSEntries[] =
     {
         6,
         17,
-        "Select a file system from the list below.",
+        "请选择下列文件系统：",
         0
     },
     {
@@ -1359,13 +1341,13 @@ static MUI_ENTRY zhCNSelectFSEntries[] =
     {
         8,
         21,
-        "\x07  Press ENTER to format the partition.",
+        "\x07  请按 ENTER 格式化此分区。",
         0
     },
     {
         8,
         23,
-        "\x07  Press ESC to select another partition.",
+        "\x07  请按 ESC 键选择其它分区。",
         0
     },
     {
