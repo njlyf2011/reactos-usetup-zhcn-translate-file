@@ -11,7 +11,7 @@ static MUI_ENTRY zhCNSetupInitPageEntries[] =
     {
         0,
         20,
-        "请等待安装程序初始化并加载硬件...",
+        "请等待安装程序初始化并检测硬件...",
         TEXT_STYLE_NORMAL | TEXT_ALIGN_CENTER
     },
     {
@@ -45,19 +45,19 @@ static MUI_ENTRY zhCNLanguagePageEntries[] =
     {
         8,
         10,
-        "\x07  Please choose the language used for the installation process.",
+        "\x07  请选择安装过程中所使用的语言，",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         11,
-        "   Then press ENTER.",
+        "   并按 ENTER 键。",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         13,
-        "\x07  This Language will be the default language for the final system.",
+        "\x07  所选语言将会成为安装后系统的默认语言。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -180,7 +180,7 @@ static MUI_ENTRY zhCNIntroPageEntries[] =
     {
         6,
         14,
-        "如果您想在真实硬件上运行 ReactOS ，请注意备份您的数据。",
+        "如果您想在真实硬件上运行 ReactOS，请注意备份您的数据。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -467,7 +467,7 @@ static MUI_ENTRY zhCNRepairPageEntries[] =
     {
         8,
         19,
-        "\x07  Press ESC to return to the main page.",
+        "\x07  请按 ESC 键返回主页。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -549,7 +549,7 @@ static MUI_ENTRY zhCNUpgradePageEntries[] =
     {
         0,
         0,
-        "U = Upgrade   ESC = Do not upgrade   F3 = Quit",
+        "U = 升级   ESC = 不执行升级   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -571,7 +571,7 @@ static MUI_ENTRY zhCNComputerPageEntries[] =
     {
         6,
         8,
-        "You want to change the type of computer to be installed.",
+        "您可以更改即将安装的计算机类型。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -760,19 +760,13 @@ static MUI_ENTRY zhCNSuccessPageEntries[] =
     {
         10,
         6,
-        "The basic components of ReactOS have been installed successfully.",
+        "ReactOS 基础组件已经安装完毕。",
         TEXT_STYLE_NORMAL
     },
     {
         10,
         8,
-        "Remove floppy disk from Drive A: and",
-        TEXT_STYLE_NORMAL
-    },
-    {
-        10,
-        9,
-        "all CD-ROMs from CD-Drive.",
+        "请从软盘驱动器 A 和光驱中移除所有磁盘。",
         TEXT_STYLE_NORMAL
     },
     {
@@ -830,7 +824,7 @@ static MUI_ENTRY zhCNBootPageEntries[] =
     {
         0,
         0,
-        "ENTER = Continue   F3 = Quit",
+        "ENTER = 继续   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1029,7 +1023,7 @@ static MUI_ENTRY zhCNFormatPartitionEntries[] =
     {
         0,
         0,
-        "ENTER = Continue   F3 = Quit",
+        "ENTER = 继续   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1081,7 +1075,7 @@ static MUI_ENTRY zhCNInstallDirectoryEntries[] =
     {
         0,
         0,
-        "ENTER = Continue   F3 = Quit",
+        "ENTER = 继续   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1173,7 +1167,7 @@ static MUI_ENTRY zhCNBootLoaderEntries[] =
     {
         0,
         0,
-        "ENTER = Continue   F3 = Quit",
+        "ENTER = 继续   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1376,31 +1370,31 @@ static MUI_ENTRY zhCNDeletePartitionEntries[] =
     {
         6,
         8,
-        "You have chosen to delete the partition",
+        "您已选择即将删除此分区",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         18,
-        "\x07  Press D to delete the partition.",
+        "\x07  按 D 删除该分区。",
         TEXT_STYLE_NORMAL
     },
     {
         11,
         19,
-        "WARNING: All data on this partition will be lost!",
+        "警告：原分区内所有内容都将丢失！",
         TEXT_STYLE_NORMAL
     },
     {
         8,
         21,
-        "\x07  Press ESC to cancel.",
+        "\x07  按 ESC 键返回。",
         TEXT_STYLE_NORMAL
     },
     {
         0,
         0,
-        "D = Delete Partition   ESC = Cancel   F3 = Quit",
+        "D = 删除分区   ESC = 取消   F3 = 退出",
         TEXT_TYPE_STATUS | TEXT_PADDING_BIG
     },
     {
@@ -1454,7 +1448,7 @@ MUI_ERROR zhCNErrorEntries[] =
         "\n"
         "  \x07  Press ENTER to continue Setup.\n"
         "  \x07  Press F3 to quit Setup.",
-        "F3 = Quit  ENTER = Continue"
+        "F3 = 退出  ENTER = 继续"
     },
     {
         // ERROR_NO_HDD
@@ -1520,7 +1514,7 @@ MUI_ERROR zhCNErrorEntries[] =
         "\n"
         "  \x07  Press F3 to quit Setup.\n"
         "  \x07  Press ENTER to continue.",
-        "F3 = Quit  ENTER = Continue"
+        "F3 = 退出  ENTER = 继续"
     },
     {
         // ERROR_NEW_PARTITION,
@@ -1544,8 +1538,8 @@ MUI_ERROR zhCNErrorEntries[] =
     },
     {
         // ERROR_NO_FLOPPY,
-        "No disk in drive A:.",
-        "ENTER = Continue"
+        "驱动器 A: 中没有磁盘。",
+        "ENTER = 继续"
     },
     {
         // ERROR_UPDATE_KBSETTINGS,
@@ -1559,17 +1553,17 @@ MUI_ERROR zhCNErrorEntries[] =
     },
     {
         // ERROR_IMPORT_HIVE,
-        "Setup failed to import a hive file.",
+        "安装程序无法导入注册表文件。",
         "ENTER = 重启计算机"
     },
     {
         // ERROR_FIND_REGISTRY
-        "Setup failed to find the registry data files.",
+        "安装程序无法找到注册表文件。",
         "ENTER = 重启计算机"
     },
     {
         // ERROR_CREATE_HIVE,
-        "Setup failed to create the registry hives.",
+        "安装程序无法创建注册表文件。",
         "ENTER = 重启计算机"
     },
     {
@@ -1621,7 +1615,7 @@ MUI_ERROR zhCNErrorEntries[] =
     },
     {
         // ERROR_WRITE_PTABLE,
-        "Setup failed to write partition tables.\n"
+        "安装程序无法写入分区表。\n"
         "ENTER = 重启计算机"
     },
     {
@@ -1631,7 +1625,7 @@ MUI_ERROR zhCNErrorEntries[] =
     },
     {
         // ERROR_UPDATE_LOCALESETTINGS,
-        "Setup could not set the system locale.\n"
+        "安装程序无法设置区域。\n"
         "ENTER = 重启计算机"
     },
     {
@@ -1646,7 +1640,7 @@ MUI_ERROR zhCNErrorEntries[] =
     },
     {
         // ERROR_DIRECTORY_NAME,
-        "Invalid directory name.\n"
+        "目录名称无效。\n"
         "\n"
         "  * Press any key to continue."
     },
@@ -1799,17 +1793,17 @@ MUI_PAGE zhCNPages[] =
 MUI_STRING zhCNStrings[] =
 {
     {STRING_PLEASEWAIT,
-     "   Please wait..."},
+     "   请稍候..."},
     {STRING_INSTALLCREATEPARTITION,
-     "   ENTER = Install   P = Create Primary   E = Create Extended   F3 = Quit"},
+     "   ENTER = 安装   P = 创建主分区   E = 创建拓展分区   F3 = 退出"},
     {STRING_INSTALLCREATELOGICAL,
-     "   ENTER = Install   L = Create Logical Partition   F3 = Quit"},
+     "   ENTER = 安装   L = 创建逻辑分区   F3 = 退出"},
     {STRING_INSTALLDELETEPARTITION,
-     "   ENTER = Install   D = Delete Partition   F3 = Quit"},
+     "   ENTER = 安装   D = 删除分区   F3 = 退出"},
     {STRING_DELETEPARTITION,
-     "   D = Delete Partition   F3 = Quit"},
+     "   D = 删除分区   F3 = 退出"},
     {STRING_PARTITIONSIZE,
-     "Size of new partition:"},
+     "新分区大小:"},
     {STRING_CHOOSENEWPARTITION,
      "You have chosen to create a primary partition on"},
     {STRING_CHOOSE_NEW_EXTENDED_PARTITION,
@@ -1819,7 +1813,7 @@ MUI_STRING zhCNStrings[] =
     {STRING_HDDSIZE,
     "Please enter the size of the new partition in megabytes."},
     {STRING_CREATEPARTITION,
-     "   ENTER = Create Partition   ESC = Cancel   F3 = Quit"},
+     "   ENTER = 创建分区   ESC = 取消   F3 = 退出"},
     {STRING_PARTFORMAT,
     "This Partition will be formatted next."},
     {STRING_NONFORMATTEDPART,
@@ -1833,29 +1827,29 @@ MUI_STRING zhCNStrings[] =
     {STRING_CHECKINGPART,
     "Setup is now checking the selected partition."},
     {STRING_CONTINUE,
-    "ENTER = Continue"},
+    "ENTER = 继续"},
     {STRING_QUITCONTINUE,
-    "F3 = Quit  ENTER = Continue"},
+    "F3 = 退出  ENTER = 继续"},
     {STRING_REBOOTCOMPUTER,
     "ENTER = 重启计算机"},
     {STRING_DELETING,
-     "   Deleting file: %S"},
+     "   正在删除文件: %S"},
     {STRING_MOVING,
-     "   Moving file: %S to: %S"},
+     "   正在移动文件: %S to: %S"},
     {STRING_RENAMING,
-     "   Renaming file: %S to: %S"},
+     "   正在重命名文件: %S to: %S"},
     {STRING_COPYING,
-     "   Copying file: %S"},
+     "   正在复制文件: %S"},
     {STRING_SETUPCOPYINGFILES,
-     "Setup is copying files..."},
+     "安装程序正在复制文件..."},
     {STRING_REGHIVEUPDATE,
     "   Updating registry hives..."},
     {STRING_IMPORTFILE,
-    "   Importing %S..."},
+    "   正在导入 %S..."},
     {STRING_DISPLAYSETTINGSUPDATE,
     "   Updating display registry settings..."},
     {STRING_LOCALESETTINGSUPDATE,
-    "   Updating locale settings..."},
+    "   正在更新区域设置..."},
     {STRING_KEYBOARDSETTINGSUPDATE,
     "   Updating keyboard layout settings..."},
     {STRING_CODEPAGEINFOUPDATE,
@@ -1863,7 +1857,7 @@ MUI_STRING zhCNStrings[] =
     {STRING_DONE,
     "   Done..."},
     {STRING_REBOOTCOMPUTER2,
-    "   ENTER = Reboot computer"},
+    "   ENTER = 重新启动计算机"},
     {STRING_REBOOTPROGRESSBAR,
     " Your computer will reboot in %li second(s)... "},
     {STRING_CONSOLEFAIL1,
